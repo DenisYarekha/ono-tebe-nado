@@ -75,24 +75,25 @@
   font-size: 100px;
   line-height: 100px;
   column-gap: 20px;
-  padding: 165px 50px 0px 50px;
+  padding: 165px 50px 135px 50px;
 }
 
 .accent_span {
   display: flex;
+  padding-top: 20px;
+}
+
+.accent_span:first-child {
+  padding-top: 0px;
 }
 
 .text_left {
   line-height: 115px;
-  letter-spacing: 0.3em;
   justify-content: flex-start;
-  padding-bottom: 20px;
 }
 
 .text_center {
-  letter-spacing: 0.6em;
   justify-content: center;
-  padding-bottom: 20px;
 }
 
 .text_right {
@@ -110,7 +111,7 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
-  padding: 147px 68px 62px 78px;
+  padding: 0px 68px 62px 78px;
 }
 
 .cover__button {
@@ -162,6 +163,7 @@
   justify-content: space-between;
   max-width: 334px;
   min-height: 563px;
+  text-decoration: none;
 }
 
 .cards__films::before {
@@ -232,23 +234,15 @@
   padding-bottom: 76px;
 }
 
-.about__text_ {
-  padding-right: 5px;
+.about__text {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.01em;
-  grid-column: 2/3;
-  grid-row: 2/3;
 }
 
-.about__text__ {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.01em;
-  grid-column: 2/3;
-  grid-row: 3/4;
+.about__text:first-of-type {
+  padding-right: 5px;
 }
 
 .footer {
@@ -279,16 +273,21 @@
   text-transform: uppercase;
 }
 
-.text_spacing_header {
+.text__spacing__small {
   letter-spacing: 0.01em;
 }
 
-.text__spacing {
+.text__spacing__mid {
   letter-spacing: 0.3em;
 }
 
 .text__spacing__big {
   letter-spacing: 0.6em;
+}
+
+.word__spacing__small {
+  word-spacing: 0.8em;
+  margin-right: 1.1em;
 }
 
 .word__spacing__mid {
@@ -297,11 +296,6 @@
 
 .word__spacing__big {
   word-spacing: 1.1em;
-  margin-right: 1.1em;
-}
-
-.word__spacing__small {
-  word-spacing: 0.8em;
   margin-right: 1.1em;
 }
 
